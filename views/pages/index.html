@@ -1,0 +1,77 @@
+        <div><progress id="progress" value="0" max="100" hidden></progress></div>
+		
+		<div id='attention'>
+		<h1>Now you have a free cool online editor for your own patterns <span id="close_attention" > Close </span></h1>
+		</div>
+		
+		<div id="seed_list"  >[seed-list]</div>
+		
+		<div id="history_div" class="flex-container" ></div>
+		
+		<div id="desktop_div" class="flex-container"  >
+		
+			<div id="canvas_div" class="flex-item">
+				<canvas id="canvas" width="100" height="100" init-path="[init-path]"></canvas>
+			</div>
+			
+			<div id="scale_div" class="flex-item draggable" >	
+			
+				<div><span id="canvas_width_height">300x300</span></div>
+					<div id="pixels_buttons">
+					
+					<input type="button" id="btn_lt" value=" LT ">
+					<input type="button" id="btn_rb" value=" RB ">
+					<input type="button" id="btn_esc" value=" X ">
+					<input type="button" id="btn_remove_part" value=" REMOVE ">
+					<input type="button" id="btn_copy_color_of_point" value=" COPY ">
+					<input type="button" id="btn_fill_point_by_color_of_point" value=" PASTE ">
+					<!---
+					<input type="button" id="btn_remove_point" value=" RP ">
+					--->
+					</div> 
+					
+				<div><canvas id="pixels" width="150" height="150" style="cursor:crosshair;border: 1px solid gold;z-index: 990"></canvas></div>
+				<div><span id="selected_x_y">0x0</span></div>
+			</div>
+		
+		</div>
+		<div class="flex-container"  id="collected_div"></div>
+		<div id="saves"></div>
+		
+		<div class="hint" id="hint0">Press 'h' for help</div>
+		
+		<div id="filter_div" style="visibility:hidden" >
+	
+		<div><button id="filterButton"> FILTER </button><input type="checkbox" id="cyclic">Cyclick</div>
+		
+		 <div>
+						
+				<input type="button" id="min_red_range" value=" - ">
+				<input type="range" id="range_red" min="0" max="255" step="1" value="0" onchange="user_change_r_color()">
+				<input type="text" id="red" value="0"  >
+				<input type="button" id="max_red_range" value=" + ">
+				</div>
+
+				<div>
+				<input type="button" id="min_green_range" value=" - ">
+				<input type="range" id="range_green" min="0" max="255" step="1" value="0" onchange="user_change_g_color()">
+				<input type="text" id="green" value="0"  >
+				<input type="button" id="max_green_range" value=" + ">
+				</div>
+
+				<div>
+				<input type="button" id="min_blue_range" value=" - ">
+				<input type="range" id="range_blue" min="0" max="255" step="1" value="0" onchange="user_change_b_color()">	
+				<input type="text" id="blue" value="0"  >
+				<input type="button" id="max_blue_range" value=" + ">
+				</div>
+
+				<div>
+				<input type="button" id="min_alpha_range" value=" - ">
+				<input type="range" id="range_alpha" min="0" max="255" step="1" value="0" onchange="user_change_a_color()">	
+				<input type="text" id="alpha" value="0"  >
+				<input type="button" id="max_alpha_range" value=" + ">
+				</div>
+
+
+</div>

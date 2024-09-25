@@ -1,0 +1,19 @@
+[
+{"number":"3","script": ["generate random seed"]},
+{"number":"4","script": ["generate random seed 3 2"," plus"]},
+{"number":"2","script": ["generate random seed"," mirror right"," mirror down"," plus"," plus"," smooth"," mirror down",
+" mirror right"," axes minus"," axes minus"," border minus"," mirror down  "]},
+{"number":"1","script": ["generate random seed 15 4"," save as [name:a17]",
+" generate random seed 15 4"," axes minus"," axes minus"," save as [name:b18]",
+" combo [name:a17] [name:b18]"," plus"," plus"," plus"," plus"," smooth",
+"delete [name:a17]","delete [name:b18]"]},
+{"number":"5","script": ["generate random seed 5 3"," mirror right"," mirror down"," plus"," plus"," plus"," save as [name:var1]",
+" rotate plus 45"," save as [name:var2]"," combo [name:var1] [name:var2]"," median"," razn colors",
+" mirror down"," mirror right"," smooth"," mirror down"," axes minus","axes minus",
+"delete [name:var1]","delete [name:var2]"
+]},
+{"number":"6","script": ["generate random seed 5 3"," mirror right"," mirror down"," plus"," save as [name:var1]",
+" axes minus"," axes minus"," save as [name:var2]"," combo [name:var1] [name:var2]"," border minus"," save as [name:var3]",
+" generate random seed 5 5"," save as [name:var4]"," fill [name:var3] [name:var4]"," razn colors","   mirror down"," mirror right","mirror down  ",
+"delete [name:var1]","delete [name:var2]","delete [name:var3]","delete [name:var4]"]}
+]

@@ -1,0 +1,15 @@
+[
+	{
+		"number":"1",
+		"script": [
+			{ "cmd": "generate random seed 15 4", "from": "none", "to": "a17" },
+			{ "cmd": "generate random seed 15 4", "from": "none", "to": "a18" },	
+			{ "cmd": "axes minus 2", "from": "a18", "to": "a18" },						
+			{ "cmd": "combo", "from": "a17,b18", 	"to":"c18" },
+			{ "cmd": "plus 4", "from": "c18", "to": "c18" },
+			{ "cmd": "delete", "from": "a17,b18", "to": "none" },
+			{ "cmd": "save", "from": "c18", "to": "result" },
+			{ "cmd": "delete", "from": "c18", "to": "none" }
+		]
+	}
+]

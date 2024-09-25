@@ -1,0 +1,4 @@
+<div class="container1">
+<div><input type="text" id="md5" value="045710928dbdc0d9de1713ad1a06ee9e" placeholder="Enter md5 and click canvas"></div>
+<div><canvas id="canvas" width="200" height="200"></canvas></div>
+</div>
